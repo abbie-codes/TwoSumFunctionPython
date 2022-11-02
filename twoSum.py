@@ -82,11 +82,11 @@ two numbers are appended to the empty solution array. The solution is then print
 understand.
 
 I think that the Big O Time & Space complexity is Quadratic O(N2) because of the nested for loop on line 48,
-the remainder of the function would be Constant O(1) because the first part checks if length of the array is 0,
-so the time to check this will always be the same, and the last part of the function will always add 2 numbers. But for the 
-nested loop, if the data set was extremely large then the time to loop through all of the numbers and adjacent numbers would 
-be increased considerably, this could be improved by making sure that the size of the array is always the same (Constant O(1)) 
-or by only using one loop through the array (Linear O(N)), however I am not sure how you could get to the same solution by 
+the remainder of the function would be Constant O(1) which would likely be dismissed, because the first part checks if length 
+of the array is 0, so the time to check this will always be the same, and the last part of the function will always add 2 numbers. 
+But for the nested loop, if the data set was extremely large then the time to loop through all of the numbers and adjacent numbers 
+would be increased considerably, this could be improved by making sure that the size of the array is always the same (Constant O(1)) 
+and by only using one loop through the array (Linear O(N)), however I am not sure how you could achieve the same solution by 
 only using one loop. 
 --------------------------------------------------------------------------------------------------------------------------
 """
