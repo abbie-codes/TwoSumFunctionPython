@@ -54,6 +54,7 @@ def twoSum(array, total):
 twoSum(nums, target)
 
 """
+-----------------------------------------------------------------------------------------------------------------------
 Solution Explanation: 
 
     if size == 0:
@@ -80,8 +81,12 @@ An empty array called 'solution' is declared before this part of the function, i
 two numbers are appended to the empty solution array. The solution is then printed out in a way which is easy to 
 understand.
 
-I think that the Big O Time & Space complexity is O(N2) because of the nested for loop, if the data set was extremely 
-large then the time to loop through all of the numbers and adjacent numbers would be increased considerably, this could 
-be improved by making sure that the size of the array is always the same (constant O(1)) or by only using one loop 
-through the array, however I am not sure how you could get to the same solution by only using one loop. 
+I think that the Big O Time & Space complexity is Quadratic O(N2) because of the nested for loop on line 48,
+the remainder of the function would be Constant O(1) because the first part checks if length of the array is 0,
+so the time to check this will always be the same, and the last part of the function will always add 2 numbers. But for the 
+nested loop, if the data set was extremely large then the time to loop through all of the numbers and adjacent numbers would 
+be increased considerably, this could be improved by making sure that the size of the array is always the same (Constant O(1)) 
+or by only using one loop through the array (Linear O(N)), however I am not sure how you could get to the same solution by 
+only using one loop. 
+--------------------------------------------------------------------------------------------------------------------------
 """
